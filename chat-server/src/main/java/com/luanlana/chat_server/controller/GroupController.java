@@ -30,5 +30,4 @@ public class GroupController {
     ResponseEntity<Group> insertGroup(@RequestBody CreateGroupRequest group) {
         return new ResponseEntity<Group>(groupService.save(group), HttpStatus.OK);
     }
-
 }

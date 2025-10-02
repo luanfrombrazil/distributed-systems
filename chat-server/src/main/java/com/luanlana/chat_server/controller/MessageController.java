@@ -4,12 +4,10 @@ import com.luanlana.chat_server.dto.MessageRequest;
 import com.luanlana.chat_server.model.Message;
 import com.luanlana.chat_server.service.MessageService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.sql.Timestamp;
 import java.time.Instant;
 import java.util.List;
 

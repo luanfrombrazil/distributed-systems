@@ -5,11 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="babde1e5-3020-4d12-851e-96040a3d0103" name="Changes" comment="blank commit">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/distributed-systems.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat-server/src/main/java/com/luanlana/chat_server/controller/WebSocketController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat-server/src/main/java/com/luanlana/chat_server/dto/ChatMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chat-server/src/main/java/com/luanlana/chat_server/service/WebSocketRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/chat-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-server/src/main/java/com/luanlana/chat_server/config/ConcurrencyConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-server/src/main/java/com/luanlana/chat_server/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/src/main/java/com/luanlana/chat_server/config/WebSocketConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-server/src/main/java/com/luanlana/chat_server/interceptor/ConcurrencyLimitInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/src/main/java/com/luanlana/chat_server/interceptor/ConnectionInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chat-server/src/main/java/com/luanlana/chat_server/service/MessageService.java" beforeDir="false" afterPath="$PROJECT_DIR$/chat-server/src/main/java/com/luanlana/chat_server/service/MessageService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

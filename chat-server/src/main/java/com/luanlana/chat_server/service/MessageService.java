@@ -9,10 +9,11 @@ import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.sql.Timestamp;
+import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
 import java.util.Optional;
@@ -20,6 +21,7 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class MessageService {
+    private final SimpMessagingTemplate messagingTemplate;
     private final MessageRepository messageRepository;
     private final GroupRepository groupRepository;
 
@@ -45,6 +47,14 @@ public class MessageService {
         newMessage.setNickname(dto.getNickname());
         newMessage.setGroup(group);
         newMessage.setTimestamp(Instant.now());
+
+        System.out.print("Latencia:" + Duration.between(newMessage.getTimestamp(), dto.getTimestampClient()).toMillis());
+
+        Message savedMessage = messageRepository.save(newMessage);
+
+        String destination = "/groups/" + groupId;
+        messagingTemplate.convertAndSend(destination, savedMessage);
+
         return messageRepository.save(newMessage);
     }
 }
