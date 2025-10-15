@@ -7,10 +7,14 @@ import lombok.NoArgsConstructor;
 
 import java.time.Instant;
 
-@Data // Gera getters, setters, toString(), etc.
-@NoArgsConstructor // Gera um construtor sem argumentos, necessário para o Jackson (conversor JSON)
-@AllArgsConstructor // Gera um construtor com todos os argumentos
-@JsonIgnoreProperties(ignoreUnknown = true) // Importante: ignora campos extras que o servidor possa enviar no futuro
+/*
+BASICAMENTE UMA REPLICA DO MODEL MESSAGE DO SERVER
+ */
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Message {
     private Long id;
     private Instant timestamp;

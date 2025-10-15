@@ -19,7 +19,7 @@ public class GroupService {
     }
 
     public Group findById(Long id) {
-        return groupRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("Grupo não encontrado com o id: " + id));
+        return groupRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("GRUPO COM ID NAO ENCONTRADO: " + id));
     }
 
     public Group save(CreateGroupRequest groupRequest) {

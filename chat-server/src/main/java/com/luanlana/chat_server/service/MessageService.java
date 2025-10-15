@@ -1,6 +1,7 @@
 package com.luanlana.chat_server.service;
 
 import com.luanlana.chat_server.dto.MessageRequest;
+import com.luanlana.chat_server.log.LogWriter;
 import com.luanlana.chat_server.model.Group;
 import com.luanlana.chat_server.model.Message;
 import com.luanlana.chat_server.repository.GroupRepository;
@@ -13,6 +14,7 @@ import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.io.IOException;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
@@ -21,6 +23,17 @@ import java.util.Optional;
 @Service
 @RequiredArgsConstructor
 public class MessageService {
+
+    private LogWriter logger;
+
+    {
+        try {
+            logger = new LogWriter("logs/serverlatency_log.txt");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private final SimpMessagingTemplate messagingTemplate;
     private final MessageRepository messageRepository;
     private final GroupRepository groupRepository;
@@ -39,16 +52,16 @@ public class MessageService {
         }
 
         Group group = groupRepository.findById(groupId)
-                .orElseThrow(() -> new EntityNotFoundException("Grupo não encontrado com o id: " + groupId));
+                .orElseThrow(() -> new EntityNotFoundException("GRUPO COM ID NAO ENCONTRADO: " + groupId));
 
         Message newMessage = new Message();
         newMessage.setIdemKey(dto.getIdemKey());
         newMessage.setMessage(dto.getText());
         newMessage.setNickname(dto.getNickname());
         newMessage.setGroup(group);
-        newMessage.setTimestamp(Instant.now());
-
-        System.out.print("Latencia:" + Duration.between(newMessage.getTimestamp(), dto.getTimestampClient()).toMillis());
+        newMessage.setTimestamp(dto.getTimestampClient());
+//        newMessage.setTimestamp(Instant.now());
+        logger.print("MENSAGEM RECEBIDA, LATENCIA:" + Duration.between(dto.getTimestampClient(), Instant.now()).toMillis());
 
         Message savedMessage = messageRepository.save(newMessage);
 

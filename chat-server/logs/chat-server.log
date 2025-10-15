@@ -1,0 +1,231 @@
+2025-10-04T19:54:36.388-03:00  INFO 19752 --- [chat-server] [restartedMain] c.l.chat_server.ChatServerApplication    : Starting ChatServerApplication using Java 25 with PID 19752 (C:\Users\Luan\Documents\Projects\distributed-systems\chat-server\target\classes started by Luan in C:\Users\Luan\Documents\Projects\distributed-systems\chat-server)
+2025-10-04T19:54:36.390-03:00 DEBUG 19752 --- [chat-server] [restartedMain] c.l.chat_server.ChatServerApplication    : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-04T19:54:36.391-03:00  INFO 19752 --- [chat-server] [restartedMain] c.l.chat_server.ChatServerApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-10-04T19:54:36.452-03:00  INFO 19752 --- [chat-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-10-04T19:54:36.452-03:00  INFO 19752 --- [chat-server] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-10-04T19:54:37.149-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-04T19:54:37.152-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-04T19:54:37.186-03:00  INFO 19752 --- [chat-server] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.luanlana.chat_server.repository.GroupRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-10-04T19:54:37.188-03:00  INFO 19752 --- [chat-server] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.luanlana.chat_server.repository.MessageRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-10-04T19:54:37.189-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 0 JDBC repository interfaces.
+2025-10-04T19:54:37.201-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-04T19:54:37.203-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04T19:54:37.236-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces.
+2025-10-04T19:54:37.847-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-04T19:54:37.865-03:00  INFO 19752 --- [chat-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-04T19:54:37.865-03:00  INFO 19752 --- [chat-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-04T19:54:37.905-03:00  INFO 19752 --- [chat-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-04T19:54:37.906-03:00  INFO 19752 --- [chat-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1452 ms
+2025-10-04T19:54:37.989-03:00  INFO 19752 --- [chat-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-04T19:54:38.179-03:00  INFO 19752 --- [chat-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f07c5a1
+2025-10-04T19:54:38.181-03:00  INFO 19752 --- [chat-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-04T19:54:38.299-03:00  INFO 19752 --- [chat-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04T19:54:38.359-03:00  INFO 19752 --- [chat-server] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.29.Final
+2025-10-04T19:54:38.398-03:00  INFO 19752 --- [chat-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-04T19:54:38.687-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04T19:54:38.749-03:00  WARN 19752 --- [chat-server] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-10-04T19:54:38.768-03:00  INFO 19752 --- [chat-server] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-04T19:54:39.612-03:00  INFO 19752 --- [chat-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04T19:54:39.766-03:00  INFO 19752 --- [chat-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T19:54:40.345-03:00  WARN 19752 --- [chat-server] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04T19:54:40.943-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-04T19:54:40.958-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2025-10-04T19:54:40.959-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5ed27246]]
+2025-10-04T19:54:40.960-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2025-10-04T19:54:40.987-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-04T19:54:40.993-03:00  INFO 19752 --- [chat-server] [restartedMain] c.l.chat_server.ChatServerApplication    : Started ChatServerApplication in 5.119 seconds (process running for 5.66)
+2025-10-04T19:55:40.957-03:00  INFO 19752 --- [chat-server] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-10-04T19:55:46.127-03:00  INFO 19752 --- [chat-server] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 22 class path changes (1 addition, 20 deletions, 1 modification)
+2025-10-04T19:55:46.133-03:00  INFO 19752 --- [chat-server] [Thread-5] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-04T19:55:46.139-03:00  INFO 19752 --- [chat-server] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-04T19:55:46.141-03:00  INFO 19752 --- [chat-server] [Thread-5] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2025-10-04T19:55:46.141-03:00  INFO 19752 --- [chat-server] [Thread-5] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@5ed27246]]
+2025-10-04T19:55:46.141-03:00  INFO 19752 --- [chat-server] [Thread-5] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2025-10-04T19:55:46.144-03:00  INFO 19752 --- [chat-server] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T19:55:46.149-03:00  INFO 19752 --- [chat-server] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-04T19:55:46.157-03:00  INFO 19752 --- [chat-server] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-04T19:55:46.264-03:00  INFO 19752 --- [chat-server] [restartedMain] c.l.chat_server.ChatServerApplication    : Starting ChatServerApplication using Java 25 with PID 19752 (C:\Users\Luan\Documents\Projects\distributed-systems\chat-server\target\classes started by Luan in C:\Users\Luan\Documents\Projects\distributed-systems\chat-server)
+2025-10-04T19:55:46.265-03:00 DEBUG 19752 --- [chat-server] [restartedMain] c.l.chat_server.ChatServerApplication    : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-04T19:55:46.265-03:00  INFO 19752 --- [chat-server] [restartedMain] c.l.chat_server.ChatServerApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-10-04T19:55:46.437-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-04T19:55:46.438-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-04T19:55:46.440-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JDBC repository interfaces.
+2025-10-04T19:55:46.443-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-04T19:55:46.443-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04T19:55:46.444-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 0 ms. Found 0 JPA repository interfaces.
+2025-10-04T19:55:46.519-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-04T19:55:46.521-03:00  INFO 19752 --- [chat-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-04T19:55:46.521-03:00  INFO 19752 --- [chat-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-04T19:55:46.540-03:00  INFO 19752 --- [chat-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-04T19:55:46.541-03:00  INFO 19752 --- [chat-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 273 ms
+2025-10-04T19:55:46.573-03:00  INFO 19752 --- [chat-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-10-04T19:55:46.577-03:00  INFO 19752 --- [chat-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@737b5527
+2025-10-04T19:55:46.578-03:00  INFO 19752 --- [chat-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-10-04T19:55:46.589-03:00  INFO 19752 --- [chat-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04T19:55:46.591-03:00  INFO 19752 --- [chat-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-04T19:55:46.603-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04T19:55:46.605-03:00  WARN 19752 --- [chat-server] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-10-04T19:55:46.606-03:00  INFO 19752 --- [chat-server] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-04T19:55:46.621-03:00  INFO 19752 --- [chat-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04T19:55:46.621-03:00  INFO 19752 --- [chat-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T19:55:46.636-03:00  WARN 19752 --- [chat-server] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04T19:55:46.742-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-04T19:55:46.753-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-04T19:55:46.757-03:00  INFO 19752 --- [chat-server] [restartedMain] c.l.chat_server.ChatServerApplication    : Started ChatServerApplication in 0.529 seconds (process running for 71.424)
+2025-10-04T19:55:46.761-03:00  INFO 19752 --- [chat-server] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   TaskExecutorConfigurations.AsyncConfigurerConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.scheduling.annotation.AsyncConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutorConfigurations.AsyncConfigurerConfiguration#applicationTaskExecutorAsyncConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.scheduling.annotation.AsyncConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ModelCondition @ConditionalOnProperty (spring.task.execution.mode=force) did not find property 'spring.task.execution.mode'; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ExecutorBeanCondition @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (TaskExecutorConfigurations.OnExecutorCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+
+Negative matches:
+-----------------
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutorVirtualThreads:
+      Did not match:
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+   WebSocketMessagingAutoConfiguration.WebSocketMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.socket.config.annotation.DelegatingWebSocketMessageBrokerConfiguration,com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) did not find any beans of type org.springframework.web.socket.config.annotation.DelegatingWebSocketMessageBrokerConfiguration (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'com.fasterxml.jackson.databind.ObjectMapper', 'org.springframework.messaging.simp.config.AbstractMessageBrokerConfiguration' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-10-04T19:55:49.161-03:00  INFO 19752 --- [chat-server] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 20 class path changes (20 additions, 0 deletions, 0 modifications)
+2025-10-04T19:55:49.163-03:00  INFO 19752 --- [chat-server] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-04T19:55:49.169-03:00  INFO 19752 --- [chat-server] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-04T19:55:49.171-03:00  INFO 19752 --- [chat-server] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T19:55:49.172-03:00  INFO 19752 --- [chat-server] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-10-04T19:55:49.175-03:00  INFO 19752 --- [chat-server] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-10-04T19:55:49.289-03:00  INFO 19752 --- [chat-server] [restartedMain] c.l.chat_server.ChatServerApplication    : Starting ChatServerApplication using Java 25 with PID 19752 (C:\Users\Luan\Documents\Projects\distributed-systems\chat-server\target\classes started by Luan in C:\Users\Luan\Documents\Projects\distributed-systems\chat-server)
+2025-10-04T19:55:49.290-03:00 DEBUG 19752 --- [chat-server] [restartedMain] c.l.chat_server.ChatServerApplication    : Running with Spring Boot v3.5.6, Spring v6.2.11
+2025-10-04T19:55:49.290-03:00  INFO 19752 --- [chat-server] [restartedMain] c.l.chat_server.ChatServerApplication    : No active profile set, falling back to 1 default profile: "default"
+2025-10-04T19:55:49.437-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-04T19:55:49.438-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-10-04T19:55:49.444-03:00  INFO 19752 --- [chat-server] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.luanlana.chat_server.repository.GroupRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-10-04T19:55:49.446-03:00  INFO 19752 --- [chat-server] [restartedMain] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.luanlana.chat_server.repository.MessageRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-10-04T19:55:49.447-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JDBC repository interfaces.
+2025-10-04T19:55:49.451-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2025-10-04T19:55:49.452-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-04T19:55:49.460-03:00  INFO 19752 --- [chat-server] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 2 JPA repository interfaces.
+2025-10-04T19:55:49.554-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-10-04T19:55:49.555-03:00  INFO 19752 --- [chat-server] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-04T19:55:49.555-03:00  INFO 19752 --- [chat-server] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.46]
+2025-10-04T19:55:49.575-03:00  INFO 19752 --- [chat-server] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-04T19:55:49.576-03:00  INFO 19752 --- [chat-server] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 282 ms
+2025-10-04T19:55:49.594-03:00  INFO 19752 --- [chat-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-10-04T19:55:49.597-03:00  INFO 19752 --- [chat-server] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4016cb3a
+2025-10-04T19:55:49.598-03:00  INFO 19752 --- [chat-server] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-10-04T19:55:49.608-03:00  INFO 19752 --- [chat-server] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-04T19:55:49.610-03:00  INFO 19752 --- [chat-server] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-04T19:55:49.619-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-04T19:55:49.621-03:00  WARN 19752 --- [chat-server] [restartedMain] org.hibernate.dialect.Dialect            : HHH000511: The 5.5.5 version for [org.hibernate.dialect.MySQLDialect] is no longer supported, hence certain features may not work properly. The minimum supported version is 8.0.0. Check the community dialects project for available legacy versions.
+2025-10-04T19:55:49.621-03:00  INFO 19752 --- [chat-server] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 5.5.5
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-04T19:55:49.665-03:00  INFO 19752 --- [chat-server] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-04T19:55:49.702-03:00  INFO 19752 --- [chat-server] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T19:55:49.806-03:00  WARN 19752 --- [chat-server] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-04T19:55:49.898-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-10-04T19:55:49.908-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Starting...
+2025-10-04T19:55:49.908-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=true, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4281e589]]
+2025-10-04T19:55:49.908-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.m.s.b.SimpleBrokerMessageHandler     : Started.
+2025-10-04T19:55:49.911-03:00  INFO 19752 --- [chat-server] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-10-04T19:55:49.915-03:00  INFO 19752 --- [chat-server] [restartedMain] c.l.chat_server.ChatServerApplication    : Started ChatServerApplication in 0.657 seconds (process running for 74.582)
+2025-10-04T19:55:49.917-03:00  INFO 19752 --- [chat-server] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   WebSocketMessagingAutoConfiguration.WebSocketMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required classes 'com.fasterxml.jackson.databind.ObjectMapper', 'org.springframework.messaging.simp.config.AbstractMessageBrokerConfiguration' (OnClassCondition)
+      - @ConditionalOnBean (types: org.springframework.web.socket.config.annotation.DelegatingWebSocketMessageBrokerConfiguration,com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found beans 'jacksonObjectMapper', 'org.springframework.web.socket.config.annotation.DelegatingWebSocketMessageBrokerConfiguration' (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ModelCondition @ConditionalOnProperty (spring.task.execution.mode=force) did not find property 'spring.task.execution.mode'; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ExecutorBeanCondition @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) found beans of type 'java.util.concurrent.Executor' clientInboundChannelExecutor, clientOutboundChannelExecutor, brokerChannelExecutor (TaskExecutorConfigurations.OnExecutorCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2025-10-04T19:56:49.908-03:00  INFO 19752 --- [chat-server] [MessageBroker-1] o.s.w.s.c.WebSocketMessageBrokerStats    : WebSocketSession[0 current WS(0)-HttpStream(0)-HttpPoll(0), 0 total, 0 closed abnormally (0 connect failure, 0 send limit, 0 transport error)], stompSubProtocol[processed CONNECT(0)-CONNECTED(0)-DISCONNECT(0)], stompBrokerRelay[null], inboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], outboundChannel[pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], sockJsScheduler[pool size = 1, active threads = 1, queued tasks = 0, completed tasks = 0]
+2025-10-04T20:00:10.842-03:00  INFO 19752 --- [chat-server] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-04T20:00:10.848-03:00  INFO 19752 --- [chat-server] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-04T20:00:10.849-03:00  INFO 19752 --- [chat-server] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopping...
+2025-10-04T20:00:10.849-03:00  INFO 19752 --- [chat-server] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : BrokerAvailabilityEvent[available=false, SimpleBrokerMessageHandler [org.springframework.messaging.simp.broker.DefaultSubscriptionRegistry@4281e589]]
+2025-10-04T20:00:10.850-03:00  INFO 19752 --- [chat-server] [SpringApplicationShutdownHook] o.s.m.s.b.SimpleBrokerMessageHandler     : Stopped.
+2025-10-04T20:00:10.851-03:00  INFO 19752 --- [chat-server] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-04T20:00:10.851-03:00  INFO 19752 --- [chat-server] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-10-04T20:00:10.854-03:00  INFO 19752 --- [chat-server] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.

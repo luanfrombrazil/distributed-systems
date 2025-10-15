@@ -8,4 +8,6 @@ import java.util.List;
 public interface MessageListener {
     void onMessageReceived(Message message);
     void onHistoryReceived(List<Message> history);
+    void statusOn();
+    void statusOff();
 }
